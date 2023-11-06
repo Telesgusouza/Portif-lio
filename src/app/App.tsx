@@ -1,14 +1,17 @@
-import * as Styled from './style'
-import Header from '../components/Header'
+import * as Styled from "./style";
+import Header from "../components/Header";
+import InfoUser from "../components/InfoUser";
 
 function App() {
-
   return (
     <Styled.Container>
       <Header />
-      <h1>ola mundo</h1>
+
+      <Styled.SectionInfo className="box" >
+        <InfoUser />
+      </Styled.SectionInfo>
     </Styled.Container>
-  )
+  );
 }
 
-export default App
+export default App;
